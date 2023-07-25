@@ -1,0 +1,74 @@
+<higraph ver="1,1">
+<prop ver="1,0" author=" "/>
+<design name="wizard1" ntasks="2" nsteps="1" nelems="43" nnets="0" board="P18_E_J12T8-6364_N">
+  <elem name="i_ch1" type="31" var="IB000" implem="-1" bbox="64,16" pos="64,64"/>
+  <elem name="IO_I2" type="31" var="IB001" implem="-1" bbox="64,16" pos="64,96"/>
+  <elem name="IO_I3" type="31" var="IB002" implem="-1" bbox="64,16" pos="64,128"/>
+  <elem name="IO_I4" type="31" var="IB003" implem="-1" bbox="64,16" pos="64,160"/>
+  <elem name="IO_I5" type="31" var="IB004" implem="-1" bbox="64,16" pos="64,192"/>
+  <elem name="IO_I6" type="31" var="IB005" implem="-1" bbox="64,16" pos="64,224"/>
+  <elem name="o_ch1" type="33" var="OB000" implem="-1" bbox="64,16" pos="960,64"/>
+  <elem name="IO_O2" type="33" var="OB001" implem="-1" bbox="64,16" pos="960,96"/>
+  <elem name="IO_O3" type="33" var="OB002" implem="-1" bbox="64,16" pos="960,128"/>
+  <elem name="IO_O4" type="33" var="OB003" implem="-1" bbox="64,16" pos="960,160"/>
+  <elem name="IO_O5" type="33" var="OB004" implem="-1" bbox="64,16" pos="960,192"/>
+  <elem name="IO_O6" type="33" var="OB005" implem="-1" bbox="64,16" pos="960,224"/>
+  <elem name="IO_O7" type="33" var="OB006" implem="-1" bbox="64,16" pos="960,256"/>
+  <elem name="IO_O8" type="33" var="OB007" implem="-1" bbox="64,16" pos="960,288"/>
+  <elem name="IO_O9" type="33" var="OB008" implem="-1" bbox="64,16" pos="960,320"/>
+  <elem name="IO_O10" type="33" var="OB009" implem="-1" bbox="64,16" pos="960,352"/>
+  <elem name="IO_I7" type="32" var="IW000" implem="-1" bbox="64,16" pos="64,480"/>
+  <elem name="IO_I8" type="32" var="IW001" implem="-1" bbox="64,16" pos="64,512"/>
+  <elem name="IO_I9" type="32" var="IW002" implem="-1" bbox="64,16" pos="64,544"/>
+  <elem name="IO_I10" type="32" var="IW003" implem="-1" bbox="64,16" pos="64,576"/>
+  <elem name="IO_I11" type="32" var="IW004" implem="-1" bbox="64,16" pos="64,608"/>
+  <elem name="IO_I12" type="32" var="IW005" implem="-1" bbox="64,16" pos="64,640"/>
+  <elem name="IO_I13" type="32" var="IW006" implem="-1" bbox="64,16" pos="64,672"/>
+  <elem name="IO_I14" type="32" var="IW007" implem="-1" bbox="64,16" pos="64,704"/>
+  <elem name="IO_I15" type="32" var="IW008" implem="-1" bbox="64,16" pos="64,736"/>
+  <elem name="IO_O11" type="34" var="OW000" implem="-1" bbox="64,16" pos="960,480"/>
+  <elem name="IO_O12" type="34" var="OW001" implem="-1" bbox="64,16" pos="960,512"/>
+  <elem name="IO_O13" type="34" var="OW002" implem="-1" bbox="64,16" pos="960,544"/>
+  <elem name="IO_O14" type="34" var="OW003" implem="-1" bbox="64,16" pos="960,576"/>
+  <elem name="Ser1Err" type="39" var="SB003" implem="-1" bbox="64,16" pos="192,160"/>
+  <elem name="Ser0Err" type="39" var="SB004" implem="-1" bbox="64,16" pos="192,192"/>
+  <elem name="NetwErr" type="39" var="SB005" implem="-1" bbox="64,16" pos="192,224"/>
+  <elem name="SPI0Err" type="39" var="SB006" implem="-1" bbox="64,16" pos="192,256"/>
+  <elem name="SPI1Err" type="39" var="SB007" implem="-1" bbox="64,16" pos="192,288"/>
+  <elem name="ForceLD" type="39" var="SB008" implem="-1" bbox="64,16" pos="192,320"/>
+  <elem name="TCPLogL" type="39" var="SB014" implem="-1" bbox="64,16" pos="192,512"/>
+  <elem name="TCPLogH" type="39" var="SB015" implem="-1" bbox="64,16" pos="192,544"/>
+  <elem name="Y_M" type="40" var="SW000" implem="-1" bbox="64,16" pos="832,64"/>
+  <elem name="D_H" type="40" var="SW001" implem="-1" bbox="64,16" pos="832,96"/>
+  <elem name="M_S" type="40" var="SW002" implem="-1" bbox="64,16" pos="832,128"/>
+  <elem name="FreeMs" type="40" var="SW003" implem="-1" bbox="64,16" pos="832,160"/>
+  <elem name="main" type="1" var="0" implem="0" bbox="64,48" pos="512,224"/>
+  <elem name="Subseq" type="1" var="0" implem="1" bbox="64,48" pos="512,312"/>
+  <task num="0" name="main" nelems="4" nnets="3">
+    <elem name="main1" type="11" var="" implem="0" bbox="64,48" pos="512,224"/>
+    <elem name="" type="51" var="" implem="-1" bbox="262,4" pos="512,316"/>
+    <elem name="main2" type="12" var="" implem="-1" bbox="82,48" pos="599,407"/>
+    <elem name="Subseq01" type="21" var="Subseq" implem="-1" bbox="98,48" pos="600,524"/>
+    <net name="" type="225" wires="1">
+      <wire name="True" type="225" pos="30,0" points="2">
+        <point pos="512,248"/><point pos="512,314"/>
+      </wire>
+    </net>
+    <net name="" type="226" wires="1">
+      <wire name="" type="226" pos="0,0" points="2">
+        <point pos="599,318"/><point pos="599,383"/>
+      </wire>
+    </net>
+    <net name="" type="225" wires="1">
+      <wire name="True" type="225" pos="30,0" points="2">
+        <point pos="599,431"/><point pos="600,504"/>
+      </wire>
+    </net>
+  </task>
+  <task num="1" name="Subseq" nelems="1" nnets="0">
+    <elem name="InitStep0" type="11" var="0" implem="-1" bbox="64,48" pos="476,188"/>
+  </task>
+  <step num="0" name="main1" sheets="0">
+  </step>
+</design>
+</higraph>
