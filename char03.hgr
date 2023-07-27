@@ -1,0 +1,473 @@
+<higraph ver="1,1">
+<prop ver="1,0" author=" "/>
+<design name="wizard1" ntasks="2" nsteps="11" nelems="43" nnets="0" board="P18_E_J12T8-6364_N">
+  <elem name="i_ch1" type="31" var="IB000" implem="-1" bbox="64,16" pos="64,64"/>
+  <elem name="IO_I2" type="31" var="IB001" implem="-1" bbox="64,16" pos="64,96"/>
+  <elem name="IO_I3" type="31" var="IB002" implem="-1" bbox="64,16" pos="64,128"/>
+  <elem name="IO_I4" type="31" var="IB003" implem="-1" bbox="64,16" pos="64,160"/>
+  <elem name="IO_I5" type="31" var="IB004" implem="-1" bbox="64,16" pos="64,192"/>
+  <elem name="IO_I6" type="31" var="IB005" implem="-1" bbox="64,16" pos="64,224"/>
+  <elem name="o_ch1" type="33" var="OB000" implem="-1" bbox="64,16" pos="960,64"/>
+  <elem name="IO_O2" type="33" var="OB001" implem="-1" bbox="64,16" pos="960,96"/>
+  <elem name="IO_O3" type="33" var="OB002" implem="-1" bbox="64,16" pos="960,128"/>
+  <elem name="IO_O4" type="33" var="OB003" implem="-1" bbox="64,16" pos="960,160"/>
+  <elem name="IO_O5" type="33" var="OB004" implem="-1" bbox="64,16" pos="960,192"/>
+  <elem name="IO_O6" type="33" var="OB005" implem="-1" bbox="64,16" pos="960,224"/>
+  <elem name="IO_O7" type="33" var="OB006" implem="-1" bbox="64,16" pos="960,256"/>
+  <elem name="IO_O8" type="33" var="OB007" implem="-1" bbox="64,16" pos="960,288"/>
+  <elem name="IO_O9" type="33" var="OB008" implem="-1" bbox="64,16" pos="960,320"/>
+  <elem name="IO_O10" type="33" var="OB009" implem="-1" bbox="64,16" pos="960,352"/>
+  <elem name="IO_I7" type="32" var="IW000" implem="-1" bbox="64,16" pos="64,480"/>
+  <elem name="IO_I8" type="32" var="IW001" implem="-1" bbox="64,16" pos="64,512"/>
+  <elem name="IO_I9" type="32" var="IW002" implem="-1" bbox="64,16" pos="64,544"/>
+  <elem name="IO_I10" type="32" var="IW003" implem="-1" bbox="64,16" pos="64,576"/>
+  <elem name="IO_I11" type="32" var="IW004" implem="-1" bbox="64,16" pos="64,608"/>
+  <elem name="IO_I12" type="32" var="IW005" implem="-1" bbox="64,16" pos="64,640"/>
+  <elem name="IO_I13" type="32" var="IW006" implem="-1" bbox="64,16" pos="64,672"/>
+  <elem name="IO_I14" type="32" var="IW007" implem="-1" bbox="64,16" pos="64,704"/>
+  <elem name="IO_I15" type="32" var="IW008" implem="-1" bbox="64,16" pos="64,736"/>
+  <elem name="IO_O11" type="34" var="OW000" implem="-1" bbox="64,16" pos="960,480"/>
+  <elem name="IO_O12" type="34" var="OW001" implem="-1" bbox="64,16" pos="960,512"/>
+  <elem name="IO_O13" type="34" var="OW002" implem="-1" bbox="64,16" pos="960,544"/>
+  <elem name="IO_O14" type="34" var="OW003" implem="-1" bbox="64,16" pos="960,576"/>
+  <elem name="Ser1Err" type="39" var="SB003" implem="-1" bbox="64,16" pos="192,160"/>
+  <elem name="Ser0Err" type="39" var="SB004" implem="-1" bbox="64,16" pos="192,192"/>
+  <elem name="NetwErr" type="39" var="SB005" implem="-1" bbox="64,16" pos="192,224"/>
+  <elem name="SPI0Err" type="39" var="SB006" implem="-1" bbox="64,16" pos="192,256"/>
+  <elem name="SPI1Err" type="39" var="SB007" implem="-1" bbox="64,16" pos="192,288"/>
+  <elem name="ForceLD" type="39" var="SB008" implem="-1" bbox="64,16" pos="192,320"/>
+  <elem name="TCPLogL" type="39" var="SB014" implem="-1" bbox="64,16" pos="192,512"/>
+  <elem name="TCPLogH" type="39" var="SB015" implem="-1" bbox="64,16" pos="192,544"/>
+  <elem name="Y_M" type="40" var="SW000" implem="-1" bbox="64,16" pos="832,64"/>
+  <elem name="D_H" type="40" var="SW001" implem="-1" bbox="64,16" pos="832,96"/>
+  <elem name="M_S" type="40" var="SW002" implem="-1" bbox="64,16" pos="832,128"/>
+  <elem name="FreeMs" type="40" var="SW003" implem="-1" bbox="64,16" pos="832,160"/>
+  <elem name="main" type="1" var="0" implem="0" bbox="64,48" pos="512,224"/>
+  <elem name="Subseq" type="1" var="0" implem="1" bbox="64,48" pos="512,312"/>
+  <task num="0" name="main" nelems="4" nnets="3">
+    <elem name="main1" type="11" var="" implem="0" bbox="64,48" pos="512,224"/>
+    <elem name="" type="51" var="" implem="-1" bbox="262,4" pos="512,316"/>
+    <elem name="main2" type="12" var="" implem="-1" bbox="82,48" pos="599,407"/>
+    <elem name="Subseq01" type="21" var="Subseq" implem="-1" bbox="98,48" pos="600,524"/>
+    <net name="" type="225" wires="1">
+      <wire name="True" type="225" pos="30,0" points="2">
+        <point pos="512,248"/><point pos="512,314"/>
+      </wire>
+    </net>
+    <net name="" type="226" wires="1">
+      <wire name="" type="226" pos="0,0" points="2">
+        <point pos="599,318"/><point pos="599,383"/>
+      </wire>
+    </net>
+    <net name="" type="225" wires="1">
+      <wire name="True" type="225" pos="30,0" points="2">
+        <point pos="599,431"/><point pos="600,504"/>
+      </wire>
+    </net>
+  </task>
+  <task num="1" name="Subseq" nelems="22" nnets="10">
+    <elem name="iStep0" type="11" var="0" implem="1" bbox="64,48" pos="456,108"/>
+    <elem name="Local_k0" type="165" var="0" implem="-1" bbox="93,16" pos="318,164"/>
+    <elem name="Local_k1" type="165" var="0" implem="-1" bbox="93,16" pos="318,196"/>
+    <elem name="Local_k2" type="165" var="0" implem="-1" bbox="93,16" pos="318,232"/>
+    <elem name="Local_k3" type="165" var="0" implem="-1" bbox="93,16" pos="318,264"/>
+    <elem name="Local_k4" type="165" var="0" implem="-1" bbox="93,16" pos="318,300"/>
+    <elem name="Local_k5" type="165" var="0" implem="-1" bbox="93,16" pos="318,332"/>
+    <elem name="Local_k6" type="165" var="0" implem="-1" bbox="93,16" pos="318,368"/>
+    <elem name="Local_k7" type="165" var="0" implem="-1" bbox="93,16" pos="318,400"/>
+    <elem name="Local_k8" type="165" var="0" implem="-1" bbox="93,16" pos="318,436"/>
+    <elem name="Local_k9" type="165" var="0" implem="-1" bbox="93,16" pos="318,468"/>
+    <elem name="iStep1" type="12" var="0" implem="2" bbox="64,48" pos="456,220"/>
+    <elem name="iStep2" type="12" var="0" implem="3" bbox="64,48" pos="456,340"/>
+    <elem name="iStep3" type="12" var="0" implem="4" bbox="64,48" pos="456,444"/>
+    <elem name="iStep4" type="12" var="0" implem="5" bbox="64,48" pos="456,544"/>
+    <elem name="iStep5" type="12" var="0" implem="6" bbox="64,48" pos="622,108"/>
+    <elem name="iStep6" type="12" var="0" implem="7" bbox="64,48" pos="622,216"/>
+    <elem name="iStep7" type="12" var="0" implem="8" bbox="64,48" pos="622,332"/>
+    <elem name="iStep8" type="12" var="0" implem="9" bbox="64,48" pos="622,444"/>
+    <elem name="iStep9" type="12" var="0" implem="10" bbox="64,48" pos="622,532"/>
+    <elem name="" type="220" var="" implem="-1" bbox="150,376" pos="323,316"/>
+    <elem name="Local Keep Variables" type="221" var="9" implem="-1" bbox="128,48" pos="320,112"/>
+    <net name="" type="225" wires="1">
+      <wire name="Local_k0" type="225" pos="30,0" points="2">
+        <point pos="456,132"/><point pos="456,196"/>
+      </wire>
+    </net>
+    <net name="" type="225" wires="1">
+      <wire name="Local_k1" type="225" pos="30,0" points="2">
+        <point pos="456,244"/><point pos="456,316"/>
+      </wire>
+    </net>
+    <net name="" type="225" wires="1">
+      <wire name="Local_k2" type="225" pos="30,0" points="2">
+        <point pos="456,364"/><point pos="456,420"/>
+      </wire>
+    </net>
+    <net name="" type="225" wires="1">
+      <wire name="Local_k3" type="225" pos="30,0" points="2">
+        <point pos="456,468"/><point pos="456,520"/>
+      </wire>
+    </net>
+    <net name="" type="225" wires="1">
+      <wire name="Local_k4" type="225" pos="30,0" points="6">
+        <point pos="456,568"/><point pos="456,592"/><point pos="514,592"/><point pos="514,60"/><point pos="622,60"/><point pos="622,84"/>
+      </wire>
+    </net>
+    <net name="" type="225" wires="1">
+      <wire name="Local_k5" type="225" pos="30,0" points="2">
+        <point pos="622,132"/><point pos="622,192"/>
+      </wire>
+    </net>
+    <net name="" type="225" wires="1">
+      <wire name="Local_k6" type="225" pos="30,0" points="2">
+        <point pos="622,240"/><point pos="622,308"/>
+      </wire>
+    </net>
+    <net name="" type="225" wires="1">
+      <wire name="Local_k7" type="225" pos="30,0" points="2">
+        <point pos="622,356"/><point pos="622,420"/>
+      </wire>
+    </net>
+    <net name="" type="225" wires="1">
+      <wire name="Local_k8" type="225" pos="30,0" points="2">
+        <point pos="622,468"/><point pos="622,508"/>
+      </wire>
+    </net>
+    <net name="" type="225" wires="1">
+      <wire name="Local_k9" type="225" pos="30,0" points="6">
+        <point pos="622,556"/><point pos="622,580"/><point pos="748,580"/><point pos="748,44"/><point pos="456,44"/><point pos="456,84"/>
+      </wire>
+    </net>
+  </task>
+  <step num="0" name="main1" sheets="0">
+  </step>
+  <step num="1" name="iStep0" sheets="1">
+    <normal nelems="3" nnets="3">
+      <elem name="False" type="141" var="" implem="-1" bbox="64,24" pos="836,192"/>
+      <elem name="True" type="141" var="0" implem="-1" bbox="64,24" pos="288,68"/>
+      <elem name="1000" type="71" var="0" implem="-1" bbox="64,48" pos="400,68"/>
+      <net name="" type="232" wires="10">
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,64"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,96"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,128"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,160"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,192"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,224"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,256"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,288"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,320"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,352"/>
+        </wire>
+      </net>
+      <net name="" type="232" wires="1">
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="320,68"/><point pos="368,68"/>
+        </wire>
+      </net>
+      <net name="" type="232" wires="1">
+        <wire name="" type="232" pos="0,0" points="6">
+          <point pos="432,68"/><point pos="464,68"/><point pos="464,116"/><point pos="239,116"/><point pos="239,164"/><point pos="271,164"/>
+        </wire>
+      </net>
+    </normal>
+  </step>
+  <step num="2" name="iStep1" sheets="1">
+    <normal nelems="3" nnets="3">
+      <elem name="True" type="141" var="0" implem="-1" bbox="64,24" pos="323,103"/>
+      <elem name="1000" type="71" var="0" implem="-1" bbox="64,48" pos="435,103"/>
+      <elem name="True" type="141" var="0" implem="-1" bbox="64,24" pos="836,192"/>
+      <net name="" type="232" wires="1">
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="355,103"/><point pos="403,103"/>
+        </wire>
+      </net>
+      <net name="" type="232" wires="1">
+        <wire name="" type="232" pos="0,0" points="6">
+          <point pos="467,103"/><point pos="499,103"/><point pos="499,148"/><point pos="239,148"/><point pos="239,196"/><point pos="271,196"/>
+        </wire>
+      </net>
+      <net name="" type="232" wires="1">
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,64"/>
+        </wire>
+      </net>
+    </normal>
+  </step>
+  <step num="3" name="iStep2" sheets="1">
+    <normal nelems="3" nnets="3">
+      <elem name="True" type="141" var="0" implem="-1" bbox="64,24" pos="323,103"/>
+      <elem name="1000" type="71" var="0" implem="-1" bbox="64,48" pos="435,103"/>
+      <elem name="True" type="141" var="0" implem="-1" bbox="64,24" pos="836,192"/>
+      <net name="" type="232" wires="1">
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="355,103"/><point pos="403,103"/>
+        </wire>
+      </net>
+      <net name="" type="232" wires="2">
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,64"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,96"/>
+        </wire>
+      </net>
+      <net name="" type="232" wires="1">
+        <wire name="" type="232" pos="0,0" points="8">
+          <point pos="467,103"/><point pos="499,103"/><point pos="499,148"/><point pos="352,148"/><point pos="352,152"/><point pos="239,152"/><point pos="239,232"/><point pos="271,232"/>
+        </wire>
+      </net>
+    </normal>
+  </step>
+  <step num="4" name="iStep3" sheets="1">
+    <normal nelems="3" nnets="3">
+      <elem name="True" type="141" var="0" implem="-1" bbox="64,24" pos="323,103"/>
+      <elem name="1000" type="71" var="0" implem="-1" bbox="64,48" pos="435,103"/>
+      <elem name="True" type="141" var="0" implem="-1" bbox="64,24" pos="836,192"/>
+      <net name="" type="232" wires="1">
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="355,103"/><point pos="403,103"/>
+        </wire>
+      </net>
+      <net name="" type="232" wires="3">
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,64"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,96"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,128"/>
+        </wire>
+      </net>
+      <net name="" type="232" wires="1">
+        <wire name="" type="232" pos="0,0" points="6">
+          <point pos="467,103"/><point pos="499,103"/><point pos="499,184"/><point pos="239,184"/><point pos="239,264"/><point pos="271,264"/>
+        </wire>
+      </net>
+    </normal>
+  </step>
+  <step num="5" name="iStep4" sheets="1">
+    <normal nelems="3" nnets="3">
+      <elem name="True" type="141" var="0" implem="-1" bbox="64,24" pos="323,103"/>
+      <elem name="1000" type="71" var="0" implem="-1" bbox="64,48" pos="435,103"/>
+      <elem name="True" type="141" var="0" implem="-1" bbox="64,24" pos="836,192"/>
+      <net name="" type="232" wires="1">
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="355,103"/><point pos="403,103"/>
+        </wire>
+      </net>
+      <net name="" type="232" wires="4">
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,64"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,96"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,128"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,160"/>
+        </wire>
+      </net>
+      <net name="" type="232" wires="1">
+        <wire name="" type="232" pos="0,0" points="6">
+          <point pos="467,103"/><point pos="499,103"/><point pos="499,220"/><point pos="239,220"/><point pos="239,300"/><point pos="271,300"/>
+        </wire>
+      </net>
+    </normal>
+  </step>
+  <step num="6" name="iStep5" sheets="1">
+    <normal nelems="3" nnets="3">
+      <elem name="True" type="141" var="0" implem="-1" bbox="64,24" pos="323,103"/>
+      <elem name="1000" type="71" var="0" implem="-1" bbox="64,48" pos="435,103"/>
+      <elem name="True" type="141" var="0" implem="-1" bbox="64,24" pos="836,192"/>
+      <net name="" type="232" wires="1">
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="355,103"/><point pos="403,103"/>
+        </wire>
+      </net>
+      <net name="" type="232" wires="5">
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,64"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,96"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,160"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,192"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="928,128"/><point pos="868,192"/>
+        </wire>
+      </net>
+      <net name="" type="232" wires="1">
+        <wire name="" type="232" pos="0,0" points="6">
+          <point pos="467,103"/><point pos="499,103"/><point pos="499,216"/><point pos="239,216"/><point pos="239,332"/><point pos="271,332"/>
+        </wire>
+      </net>
+    </normal>
+  </step>
+  <step num="7" name="iStep6" sheets="1">
+    <normal nelems="3" nnets="3">
+      <elem name="True" type="141" var="0" implem="-1" bbox="64,24" pos="323,103"/>
+      <elem name="1000" type="71" var="0" implem="-1" bbox="64,48" pos="435,103"/>
+      <elem name="True" type="141" var="0" implem="-1" bbox="64,24" pos="836,192"/>
+      <net name="" type="232" wires="1">
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="355,103"/><point pos="403,103"/>
+        </wire>
+      </net>
+      <net name="" type="232" wires="6">
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,64"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,96"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="928,224"/><point pos="868,192"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,192"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,160"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,128"/>
+        </wire>
+      </net>
+      <net name="" type="232" wires="1">
+        <wire name="" type="232" pos="0,0" points="6">
+          <point pos="467,103"/><point pos="499,103"/><point pos="499,236"/><point pos="239,236"/><point pos="239,368"/><point pos="271,368"/>
+        </wire>
+      </net>
+    </normal>
+  </step>
+  <step num="8" name="iStep7" sheets="1">
+    <normal nelems="3" nnets="3">
+      <elem name="True" type="141" var="0" implem="-1" bbox="64,24" pos="323,103"/>
+      <elem name="1000" type="71" var="0" implem="-1" bbox="64,48" pos="435,103"/>
+      <elem name="True" type="141" var="0" implem="-1" bbox="64,24" pos="836,192"/>
+      <net name="" type="232" wires="1">
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="355,103"/><point pos="403,103"/>
+        </wire>
+      </net>
+      <net name="" type="232" wires="5">
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,64"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,96"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,128"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,160"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,192"/>
+        </wire>
+      </net>
+      <net name="" type="232" wires="1">
+        <wire name="" type="232" pos="0,0" points="6">
+          <point pos="467,103"/><point pos="499,103"/><point pos="499,252"/><point pos="239,252"/><point pos="239,400"/><point pos="271,400"/>
+        </wire>
+      </net>
+    </normal>
+  </step>
+  <step num="9" name="iStep8" sheets="1">
+    <normal nelems="3" nnets="3">
+      <elem name="True" type="141" var="0" implem="-1" bbox="64,24" pos="323,103"/>
+      <elem name="1000" type="71" var="0" implem="-1" bbox="64,48" pos="435,103"/>
+      <elem name="True" type="141" var="0" implem="-1" bbox="64,24" pos="836,192"/>
+      <net name="" type="232" wires="1">
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="355,103"/><point pos="403,103"/>
+        </wire>
+      </net>
+      <net name="" type="232" wires="3">
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,64"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,96"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,128"/>
+        </wire>
+      </net>
+      <net name="" type="232" wires="1">
+        <wire name="" type="232" pos="0,0" points="6">
+          <point pos="467,103"/><point pos="499,103"/><point pos="499,268"/><point pos="239,268"/><point pos="239,436"/><point pos="271,436"/>
+        </wire>
+      </net>
+    </normal>
+  </step>
+  <step num="10" name="iStep9" sheets="1">
+    <normal nelems="3" nnets="3">
+      <elem name="True" type="141" var="0" implem="-1" bbox="64,24" pos="323,103"/>
+      <elem name="1000" type="71" var="0" implem="-1" bbox="64,48" pos="435,103"/>
+      <elem name="True" type="141" var="0" implem="-1" bbox="64,24" pos="836,192"/>
+      <net name="" type="232" wires="1">
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="355,103"/><point pos="403,103"/>
+        </wire>
+      </net>
+      <net name="" type="232" wires="7">
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,64"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,96"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,128"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,160"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,192"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,224"/>
+        </wire>
+        <wire name="" type="232" pos="0,0" points="2">
+          <point pos="868,192"/><point pos="928,256"/>
+        </wire>
+      </net>
+      <net name="" type="232" wires="1">
+        <wire name="" type="232" pos="0,0" points="6">
+          <point pos="467,103"/><point pos="499,103"/><point pos="499,284"/><point pos="239,284"/><point pos="239,468"/><point pos="271,468"/>
+        </wire>
+      </net>
+    </normal>
+  </step>
+</design>
+</higraph>
