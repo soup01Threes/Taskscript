@@ -10,7 +10,7 @@ http://soup01.com/en/2023/07/25/post-8855/ \
 Source Project:char02.hgr
 
 ### Part03_Taskscript‐ Local Variables/Delay Operator
-http://soup01.com/en/2023/07/29/post-8888/
+http://soup01.com/en/2023/07/29/post-8888/ \
 Source Project:char03.hgr
 
 ## Japanese
